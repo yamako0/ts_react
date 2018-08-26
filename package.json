@@ -23,6 +23,7 @@
     "@types/react-dom": "^16.0.7",
     "awesome-typescript-loader": "^5.2.0",
     "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^2.0.0",
     "prettier": "^1.14.2",
     "source-map-loader": "^0.2.4",

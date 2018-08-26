@@ -7,4 +7,3 @@ services:
       - 32000:80
     volumes:
       - ./build:/usr/share/nginx/html
-    
