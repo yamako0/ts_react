@@ -1,19 +1,22 @@
+const path = require('path')
+
 module.exports = {
+  mode: "development",
   entry: "./src/index.tsx",
   output: {
     filename: "bundle.js",
-    path: __dirname + "/build",
-    publicPath: '/build/',
+    path: path.resolve(__dirname + "/build"),
+    publicPath: '/'
   },
 
   // Enable sourcemaps for debugging webpack's output.
   devtool: "source-map",
-
+  
   resolve: {
     // Add '.ts' and '.tsx' as resolvable extensions.
     extensions: [".ts", ".tsx", ".js", ".json"]
   },
-
+  
   module: {
     rules: [
       // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
@@ -25,8 +28,10 @@ module.exports = {
     ]
   },
   devServer : {
-    contentBase: 'build',
+    contentBase: path.resolve(__dirname + "/build"),
     inline: true,
-    hot: true
+    // hot: true,
+    noInfo: true,
+    publicPath: '/'
   },
 };

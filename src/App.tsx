@@ -10,7 +10,7 @@ class App extends React.Component {
         <p>test</p>
         <p>こころ</p>
         <p>まねきケチャ</p>
-        <p>JK</p>
+        <p>よだっちょ</p>
       </div>
     )
   }
