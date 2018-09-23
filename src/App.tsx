@@ -6,6 +6,11 @@ class App extends React.Component {
     return (
       <div>
         <p>死にでち</p>
+        {/* hoge */}
+        <p>test</p>
+        <p>こころ</p>
+        <p>まねきケチャ</p>
+        <p>JK</p>
       </div>
     )
   }

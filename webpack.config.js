@@ -2,7 +2,8 @@ module.exports = {
   entry: "./src/index.tsx",
   output: {
     filename: "bundle.js",
-    path: __dirname + "/build"
+    path: __dirname + "/build",
+    publicPath: '/build/',
   },
 
   // Enable sourcemaps for debugging webpack's output.
@@ -23,5 +24,9 @@ module.exports = {
       { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
     ]
   },
-
+  devServer : {
+    contentBase: 'build',
+    inline: true,
+    hot: true
+  },
 };
