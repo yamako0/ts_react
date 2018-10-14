@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile.staging
+    ports:
+      - 32000:3000
+    volumes:
+      - .:/usr/share/nginx/html
+    command: npm run start
