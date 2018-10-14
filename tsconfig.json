@@ -25,6 +25,8 @@
     "webpack",
     "jest",
     "src/setupTests.ts",
-    "dist"
+    "dist",
+    "webpack.config.js",
+    "nginx"
   ]
 }
