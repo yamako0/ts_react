@@ -4,7 +4,7 @@ services:
   nginx:
     build: .
     ports:
-      - 32000:80
+      - 32000:25000
     volumes:
       - .:/usr/share/nginx/html
-    # command: npm run build
+    command: npm run dev
