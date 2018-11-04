@@ -6,7 +6,8 @@ services:
       context: .
       dockerfile: Dockerfile.staging
     ports:
-      - 32000:3000
+      - 80:80
+      - 443:443
     volumes:
       - .:/usr/share/nginx/html
     command: npm run start
